@@ -8,7 +8,7 @@ class Question < ActiveRecord::Base
 
   def count_the_questions
     puts "In Count questions"
-     question_count = self.survey.questions.count
-     self.survey.update_attributes(questions_count: question_count)
+    question_count = self.survey.questions.count
+#    self.survey.update_attributes(:questions_count, question_count)
   end
 end
